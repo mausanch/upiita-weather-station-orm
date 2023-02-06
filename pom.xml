@@ -48,15 +48,16 @@
 			<version>2.2</version>
 		</dependency>
 		<dependency>
-			<groupId>com.speedment</groupId>
-			<artifactId>runtime</artifactId>
-			<version>3.2.5</version>
-			<type>pom</type>
-    	</dependency>
-		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
 			<artifactId>jackson-datatype-jdk8</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-rest -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -74,11 +75,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			        <plugin>
-						<groupId>com.speedment</groupId>
-						<artifactId>speedment-maven-plugin</artifactId>
-						<version>3.2.5</version>
-					</plugin>
 		</plugins>
 	</build>
 
