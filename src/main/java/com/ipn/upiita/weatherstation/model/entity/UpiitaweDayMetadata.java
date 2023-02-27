@@ -16,7 +16,12 @@ import lombok.Data;
 @Entity(name="upiitawe_day__metadata")
 public class UpiitaweDayMetadata implements Serializable {
 
-    /** Primary key. */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/** Primary key. */
     protected static final String PK = "name";
 
     /**

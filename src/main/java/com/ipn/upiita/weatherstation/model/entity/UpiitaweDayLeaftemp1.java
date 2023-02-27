@@ -16,7 +16,12 @@ import lombok.Data;
 @Entity(name="upiitawe_day_leaftemp1")
 public class UpiitaweDayLeaftemp1 implements Serializable {
 
-    /** Primary key. */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/** Primary key. */
     protected static final String PK = "dateTime";
 
     /**

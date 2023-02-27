@@ -10,13 +10,19 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Version;
+
 import lombok.Data;
 
 @Data
 @Entity(name="upiitawe_day_windspeed")
 public class UpiitaweDayWindspeed implements Serializable {
 
-    /** Primary key. */
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/** Primary key. */
     protected static final String PK = "dateTime";
 
     /**
