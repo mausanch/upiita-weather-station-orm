@@ -52,23 +52,23 @@ public class UpiitaweDayWindspeed implements Serializable {
 
     @Id
     @Column(unique=true, nullable=false, precision=10)
-    private int dateTime;
+    private Integer dateTime;
     @Column(precision=22)
-    private double min;
+    private Double min;
     @Column(precision=10)
-    private int mintime;
+    private Integer mIntegerime;
     @Column(precision=22)
-    private double max;
+    private Double max;
     @Column(precision=10)
-    private int maxtime;
+    private Integer maxtime;
     @Column(precision=22)
-    private double sum;
+    private Double sum;
     @Column(precision=10)
-    private int count;
+    private Integer count;
     @Column(precision=22)
-    private double wsum;
+    private Double wsum;
     @Column(precision=10)
-    private int sumtime;
+    private Integer sumtime;
 
     /** Default constructor. */
     public UpiitaweDayWindspeed() {
@@ -80,7 +80,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of dateTime
      */
-    public int getDateTime() {
+    public Integer getDateTime() {
         return dateTime;
     }
 
@@ -89,7 +89,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aDateTime the new value for dateTime
      */
-    public void setDateTime(int aDateTime) {
+    public void setDateTime(Integer aDateTime) {
         dateTime = aDateTime;
     }
 
@@ -98,7 +98,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of min
      */
-    public double getMin() {
+    public Double getMin() {
         return min;
     }
 
@@ -107,26 +107,26 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aMin the new value for min
      */
-    public void setMin(double aMin) {
+    public void setMin(Double aMin) {
         min = aMin;
     }
 
     /**
-     * Access method for mintime.
+     * Access method for mIntegerime.
      *
-     * @return the current value of mintime
+     * @return the current value of mIntegerime
      */
-    public int getMintime() {
-        return mintime;
+    public Integer getMIntegerime() {
+        return mIntegerime;
     }
 
     /**
-     * Setter method for mintime.
+     * Setter method for mIntegerime.
      *
-     * @param aMintime the new value for mintime
+     * @param aMIntegerime the new value for mIntegerime
      */
-    public void setMintime(int aMintime) {
-        mintime = aMintime;
+    public void setMIntegerime(Integer aMIntegerime) {
+        mIntegerime = aMIntegerime;
     }
 
     /**
@@ -134,7 +134,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of max
      */
-    public double getMax() {
+    public Double getMax() {
         return max;
     }
 
@@ -143,7 +143,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aMax the new value for max
      */
-    public void setMax(double aMax) {
+    public void setMax(Double aMax) {
         max = aMax;
     }
 
@@ -152,7 +152,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of maxtime
      */
-    public int getMaxtime() {
+    public Integer getMaxtime() {
         return maxtime;
     }
 
@@ -161,7 +161,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aMaxtime the new value for maxtime
      */
-    public void setMaxtime(int aMaxtime) {
+    public void setMaxtime(Integer aMaxtime) {
         maxtime = aMaxtime;
     }
 
@@ -170,7 +170,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of sum
      */
-    public double getSum() {
+    public Double getSum() {
         return sum;
     }
 
@@ -179,7 +179,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aSum the new value for sum
      */
-    public void setSum(double aSum) {
+    public void setSum(Double aSum) {
         sum = aSum;
     }
 
@@ -188,7 +188,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of count
      */
-    public int getCount() {
+    public Integer getCount() {
         return count;
     }
 
@@ -197,7 +197,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aCount the new value for count
      */
-    public void setCount(int aCount) {
+    public void setCount(Integer aCount) {
         count = aCount;
     }
 
@@ -206,7 +206,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of wsum
      */
-    public double getWsum() {
+    public Double getWsum() {
         return wsum;
     }
 
@@ -215,7 +215,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aWsum the new value for wsum
      */
-    public void setWsum(double aWsum) {
+    public void setWsum(Double aWsum) {
         wsum = aWsum;
     }
 
@@ -224,7 +224,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @return the current value of sumtime
      */
-    public int getSumtime() {
+    public Integer getSumtime() {
         return sumtime;
     }
 
@@ -233,7 +233,7 @@ public class UpiitaweDayWindspeed implements Serializable {
      *
      * @param aSumtime the new value for sumtime
      */
-    public void setSumtime(int aSumtime) {
+    public void setSumtime(Integer aSumtime) {
         sumtime = aSumtime;
     }
 
@@ -267,20 +267,6 @@ public class UpiitaweDayWindspeed implements Serializable {
     public boolean equals(Object other) {
         if (!(other instanceof UpiitaweDayWindspeed)) return false;
         return this.equalKeys(other) && ((UpiitaweDayWindspeed)other).equalKeys(this);
-    }
-
-    /**
-     * Returns a hash code for this instance.
-     *
-     * @return Hash code
-     */
-    @Override
-    public int hashCode() {
-        int i;
-        int result = 17;
-        i = getDateTime();
-        result = 37*result + i;
-        return result;
     }
 
     /**

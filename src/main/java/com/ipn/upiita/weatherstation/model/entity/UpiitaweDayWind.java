@@ -51,35 +51,35 @@ public class UpiitaweDayWind implements Serializable {
 
     @Id
     @Column(unique=true, nullable=false, precision=10)
-    private int dateTime;
+    private Integer dateTime;
     @Column(precision=22)
-    private double min;
+    private Double min;
     @Column(precision=10)
-    private int mintime;
+    private Integer mIntegerime;
     @Column(precision=22)
-    private double max;
+    private Double max;
     @Column(precision=10)
-    private int maxtime;
+    private Integer maxtime;
     @Column(precision=22)
-    private double sum;
+    private Double sum;
     @Column(precision=10)
-    private int count;
+    private Integer count;
     @Column(precision=22)
-    private double wsum;
+    private Double wsum;
     @Column(precision=10)
-    private int sumtime;
+    private Integer sumtime;
     @Column(name="max_dir", precision=22)
-    private double maxDir;
+    private Double maxDir;
     @Column(precision=22)
-    private double xsum;
+    private Double xsum;
     @Column(precision=22)
-    private double ysum;
+    private Double ysum;
     @Column(precision=10)
-    private int dirsumtime;
+    private Integer dirsumtime;
     @Column(precision=22)
-    private double squaresum;
+    private Double squaresum;
     @Column(precision=22)
-    private double wsquaresum;
+    private Double wsquaresum;
 
     /** Default constructor. */
     public UpiitaweDayWind() {
@@ -91,7 +91,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of dateTime
      */
-    public int getDateTime() {
+    public Integer getDateTime() {
         return dateTime;
     }
 
@@ -100,7 +100,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aDateTime the new value for dateTime
      */
-    public void setDateTime(int aDateTime) {
+    public void setDateTime(Integer aDateTime) {
         dateTime = aDateTime;
     }
 
@@ -109,7 +109,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of min
      */
-    public double getMin() {
+    public Double getMin() {
         return min;
     }
 
@@ -118,26 +118,26 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aMin the new value for min
      */
-    public void setMin(double aMin) {
+    public void setMin(Double aMin) {
         min = aMin;
     }
 
     /**
-     * Access method for mintime.
+     * Access method for mIntegerime.
      *
-     * @return the current value of mintime
+     * @return the current value of mIntegerime
      */
-    public int getMintime() {
-        return mintime;
+    public Integer getMIntegerime() {
+        return mIntegerime;
     }
 
     /**
-     * Setter method for mintime.
+     * Setter method for mIntegerime.
      *
-     * @param aMintime the new value for mintime
+     * @param aMIntegerime the new value for mIntegerime
      */
-    public void setMintime(int aMintime) {
-        mintime = aMintime;
+    public void setMIntegerime(Integer aMIntegerime) {
+        mIntegerime = aMIntegerime;
     }
 
     /**
@@ -145,7 +145,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of max
      */
-    public double getMax() {
+    public Double getMax() {
         return max;
     }
 
@@ -154,7 +154,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aMax the new value for max
      */
-    public void setMax(double aMax) {
+    public void setMax(Double aMax) {
         max = aMax;
     }
 
@@ -163,7 +163,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of maxtime
      */
-    public int getMaxtime() {
+    public Integer getMaxtime() {
         return maxtime;
     }
 
@@ -172,7 +172,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aMaxtime the new value for maxtime
      */
-    public void setMaxtime(int aMaxtime) {
+    public void setMaxtime(Integer aMaxtime) {
         maxtime = aMaxtime;
     }
 
@@ -181,7 +181,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of sum
      */
-    public double getSum() {
+    public Double getSum() {
         return sum;
     }
 
@@ -190,7 +190,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aSum the new value for sum
      */
-    public void setSum(double aSum) {
+    public void setSum(Double aSum) {
         sum = aSum;
     }
 
@@ -199,7 +199,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of count
      */
-    public int getCount() {
+    public Integer getCount() {
         return count;
     }
 
@@ -208,7 +208,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aCount the new value for count
      */
-    public void setCount(int aCount) {
+    public void setCount(Integer aCount) {
         count = aCount;
     }
 
@@ -217,7 +217,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of wsum
      */
-    public double getWsum() {
+    public Double getWsum() {
         return wsum;
     }
 
@@ -226,7 +226,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aWsum the new value for wsum
      */
-    public void setWsum(double aWsum) {
+    public void setWsum(Double aWsum) {
         wsum = aWsum;
     }
 
@@ -235,7 +235,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of sumtime
      */
-    public int getSumtime() {
+    public Integer getSumtime() {
         return sumtime;
     }
 
@@ -244,7 +244,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aSumtime the new value for sumtime
      */
-    public void setSumtime(int aSumtime) {
+    public void setSumtime(Integer aSumtime) {
         sumtime = aSumtime;
     }
 
@@ -253,7 +253,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of maxDir
      */
-    public double getMaxDir() {
+    public Double getMaxDir() {
         return maxDir;
     }
 
@@ -262,7 +262,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aMaxDir the new value for maxDir
      */
-    public void setMaxDir(double aMaxDir) {
+    public void setMaxDir(Double aMaxDir) {
         maxDir = aMaxDir;
     }
 
@@ -271,7 +271,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of xsum
      */
-    public double getXsum() {
+    public Double getXsum() {
         return xsum;
     }
 
@@ -280,7 +280,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aXsum the new value for xsum
      */
-    public void setXsum(double aXsum) {
+    public void setXsum(Double aXsum) {
         xsum = aXsum;
     }
 
@@ -289,7 +289,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of ysum
      */
-    public double getYsum() {
+    public Double getYsum() {
         return ysum;
     }
 
@@ -298,7 +298,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aYsum the new value for ysum
      */
-    public void setYsum(double aYsum) {
+    public void setYsum(Double aYsum) {
         ysum = aYsum;
     }
 
@@ -307,7 +307,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of dirsumtime
      */
-    public int getDirsumtime() {
+    public Integer getDirsumtime() {
         return dirsumtime;
     }
 
@@ -316,7 +316,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aDirsumtime the new value for dirsumtime
      */
-    public void setDirsumtime(int aDirsumtime) {
+    public void setDirsumtime(Integer aDirsumtime) {
         dirsumtime = aDirsumtime;
     }
 
@@ -325,7 +325,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of squaresum
      */
-    public double getSquaresum() {
+    public Double getSquaresum() {
         return squaresum;
     }
 
@@ -334,7 +334,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aSquaresum the new value for squaresum
      */
-    public void setSquaresum(double aSquaresum) {
+    public void setSquaresum(Double aSquaresum) {
         squaresum = aSquaresum;
     }
 
@@ -343,7 +343,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @return the current value of wsquaresum
      */
-    public double getWsquaresum() {
+    public Double getWsquaresum() {
         return wsquaresum;
     }
 
@@ -352,7 +352,7 @@ public class UpiitaweDayWind implements Serializable {
      *
      * @param aWsquaresum the new value for wsquaresum
      */
-    public void setWsquaresum(double aWsquaresum) {
+    public void setWsquaresum(Double aWsquaresum) {
         wsquaresum = aWsquaresum;
     }
 
@@ -386,20 +386,6 @@ public class UpiitaweDayWind implements Serializable {
     public boolean equals(Object other) {
         if (!(other instanceof UpiitaweDayWind)) return false;
         return this.equalKeys(other) && ((UpiitaweDayWind)other).equalKeys(this);
-    }
-
-    /**
-     * Returns a hash code for this instance.
-     *
-     * @return Hash code
-     */
-    @Override
-    public int hashCode() {
-        int i;
-        int result = 17;
-        i = getDateTime();
-        result = 37*result + i;
-        return result;
     }
 
     /**

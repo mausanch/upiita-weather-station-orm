@@ -52,109 +52,109 @@ public class Upiitawe implements Serializable {
 
     @Id
     @Column(unique=true, nullable=false, precision=10)
-    private int dateTime;
+    private Integer dateTime;
     @Column(nullable=false, precision=10)
-    private int usUnits;
+    private Integer usUnits;
     @Column(nullable=false, precision=10)
-    private int interval;
+    private Integer Integererval;
     @Column(precision=22)
-    private double barometer;
+    private Double barometer;
     @Column(precision=22)
-    private double pressure;
+    private Double pressure;
     @Column(precision=22)
-    private double altimeter;
+    private Double altimeter;
     @Column(precision=22)
-    private double inTemp;
+    private Double inTemp;
     @Column(precision=22)
-    private double outTemp;
+    private Double outTemp;
     @Column(precision=22)
-    private double inHumidity;
+    private Double inHumidity;
     @Column(precision=22)
-    private double outHumidity;
+    private Double outHumidity;
     @Column(precision=22)
-    private double windSpeed;
+    private Double windSpeed;
     @Column(precision=22)
-    private double windDir;
+    private Double windDir;
     @Column(precision=22)
-    private double windGust;
+    private Double windGust;
     @Column(precision=22)
-    private double windGustDir;
+    private Double windGustDir;
     @Column(precision=22)
-    private double rainRate;
+    private Double rainRate;
     @Column(precision=22)
-    private double rain;
+    private Double rain;
     @Column(precision=22)
-    private double dewpoint;
+    private Double dewpoInteger;
     @Column(precision=22)
-    private double windchill;
+    private Double windchill;
     @Column(precision=22)
-    private double heatindex;
+    private Double heatindex;
     @Column(name="ET", precision=22)
-    private double et;
+    private Double et;
     @Column(precision=22)
-    private double radiation;
+    private Double radiation;
     @Column(name="UV", precision=22)
-    private double uv;
+    private Double uv;
     @Column(precision=22)
-    private double extraTemp1;
+    private Double extraTemp1;
     @Column(precision=22)
-    private double extraTemp2;
+    private Double extraTemp2;
     @Column(precision=22)
-    private double extraTemp3;
+    private Double extraTemp3;
     @Column(precision=22)
-    private double soilTemp1;
+    private Double soilTemp1;
     @Column(precision=22)
-    private double soilTemp2;
+    private Double soilTemp2;
     @Column(precision=22)
-    private double soilTemp3;
+    private Double soilTemp3;
     @Column(precision=22)
-    private double soilTemp4;
+    private Double soilTemp4;
     @Column(precision=22)
-    private double leafTemp1;
+    private Double leafTemp1;
     @Column(precision=22)
-    private double leafTemp2;
+    private Double leafTemp2;
     @Column(precision=22)
-    private double extraHumid1;
+    private Double extraHumid1;
     @Column(precision=22)
-    private double extraHumid2;
+    private Double extraHumid2;
     @Column(precision=22)
-    private double soilMoist1;
+    private Double soilMoist1;
     @Column(precision=22)
-    private double soilMoist2;
+    private Double soilMoist2;
     @Column(precision=22)
-    private double soilMoist3;
+    private Double soilMoist3;
     @Column(precision=22)
-    private double soilMoist4;
+    private Double soilMoist4;
     @Column(precision=22)
-    private double leafWet1;
+    private Double leafWet1;
     @Column(precision=22)
-    private double leafWet2;
+    private Double leafWet2;
     @Column(precision=22)
-    private double rxCheckPercent;
+    private Double rxCheckPercent;
     @Column(precision=22)
-    private double txBatteryStatus;
+    private Double txBatteryStatus;
     @Column(precision=22)
-    private double consBatteryVoltage;
+    private Double consBatteryVoltage;
     @Column(precision=22)
-    private double hail;
+    private Double hail;
     @Column(precision=22)
-    private double hailRate;
+    private Double hailRate;
     @Column(precision=22)
-    private double heatingTemp;
+    private Double heatingTemp;
     @Column(precision=22)
-    private double heatingVoltage;
+    private Double heatingVoltage;
     @Column(precision=22)
-    private double supplyVoltage;
+    private Double supplyVoltage;
     @Column(precision=22)
-    private double referenceVoltage;
+    private Double referenceVoltage;
     @Column(precision=22)
-    private double windBatteryStatus;
+    private Double windBatteryStatus;
     @Column(precision=22)
-    private double rainBatteryStatus;
+    private Double rainBatteryStatus;
     @Column(precision=22)
-    private double outTempBatteryStatus;
+    private Double outTempBatteryStatus;
     @Column(precision=22)
-    private double inTempBatteryStatus;
+    private Double inTempBatteryStatus;
 
     /** Default constructor. */
     public Upiitawe() {
@@ -166,7 +166,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of dateTime
      */
-    public int getDateTime() {
+    public Integer getDateTime() {
         return dateTime;
     }
 
@@ -175,7 +175,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aDateTime the new value for dateTime
      */
-    public void setDateTime(int aDateTime) {
+    public void setDateTime(Integer aDateTime) {
         dateTime = aDateTime;
     }
 
@@ -184,7 +184,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of usUnits
      */
-    public int getUsUnits() {
+    public Integer getUsUnits() {
         return usUnits;
     }
 
@@ -193,26 +193,26 @@ public class Upiitawe implements Serializable {
      *
      * @param aUsUnits the new value for usUnits
      */
-    public void setUsUnits(int aUsUnits) {
+    public void setUsUnits(Integer aUsUnits) {
         usUnits = aUsUnits;
     }
 
     /**
-     * Access method for interval.
+     * Access method for Integererval.
      *
-     * @return the current value of interval
+     * @return the current value of Integererval
      */
-    public int getInterval() {
-        return interval;
+    public Integer getInterval() {
+        return Integererval;
     }
 
     /**
-     * Setter method for interval.
+     * Setter method for Integererval.
      *
-     * @param aInterval the new value for interval
+     * @param aInterval the new value for Integererval
      */
-    public void setInterval(int aInterval) {
-        interval = aInterval;
+    public void setInterval(Integer aInterval) {
+        Integererval = aInterval;
     }
 
     /**
@@ -220,7 +220,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of barometer
      */
-    public double getBarometer() {
+    public Double getBarometer() {
         return barometer;
     }
 
@@ -229,7 +229,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aBarometer the new value for barometer
      */
-    public void setBarometer(double aBarometer) {
+    public void setBarometer(Double aBarometer) {
         barometer = aBarometer;
     }
 
@@ -238,7 +238,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of pressure
      */
-    public double getPressure() {
+    public Double getPressure() {
         return pressure;
     }
 
@@ -247,7 +247,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aPressure the new value for pressure
      */
-    public void setPressure(double aPressure) {
+    public void setPressure(Double aPressure) {
         pressure = aPressure;
     }
 
@@ -256,7 +256,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of altimeter
      */
-    public double getAltimeter() {
+    public Double getAltimeter() {
         return altimeter;
     }
 
@@ -265,7 +265,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aAltimeter the new value for altimeter
      */
-    public void setAltimeter(double aAltimeter) {
+    public void setAltimeter(Double aAltimeter) {
         altimeter = aAltimeter;
     }
 
@@ -274,7 +274,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of inTemp
      */
-    public double getInTemp() {
+    public Double getInTemp() {
         return inTemp;
     }
 
@@ -283,7 +283,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aInTemp the new value for inTemp
      */
-    public void setInTemp(double aInTemp) {
+    public void setInTemp(Double aInTemp) {
         inTemp = aInTemp;
     }
 
@@ -292,7 +292,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of outTemp
      */
-    public double getOutTemp() {
+    public Double getOutTemp() {
         return outTemp;
     }
 
@@ -301,7 +301,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aOutTemp the new value for outTemp
      */
-    public void setOutTemp(double aOutTemp) {
+    public void setOutTemp(Double aOutTemp) {
         outTemp = aOutTemp;
     }
 
@@ -310,7 +310,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of inHumidity
      */
-    public double getInHumidity() {
+    public Double getInHumidity() {
         return inHumidity;
     }
 
@@ -319,7 +319,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aInHumidity the new value for inHumidity
      */
-    public void setInHumidity(double aInHumidity) {
+    public void setInHumidity(Double aInHumidity) {
         inHumidity = aInHumidity;
     }
 
@@ -328,7 +328,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of outHumidity
      */
-    public double getOutHumidity() {
+    public Double getOutHumidity() {
         return outHumidity;
     }
 
@@ -337,7 +337,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aOutHumidity the new value for outHumidity
      */
-    public void setOutHumidity(double aOutHumidity) {
+    public void setOutHumidity(Double aOutHumidity) {
         outHumidity = aOutHumidity;
     }
 
@@ -346,7 +346,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of windSpeed
      */
-    public double getWindSpeed() {
+    public Double getWindSpeed() {
         return windSpeed;
     }
 
@@ -355,7 +355,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aWindSpeed the new value for windSpeed
      */
-    public void setWindSpeed(double aWindSpeed) {
+    public void setWindSpeed(Double aWindSpeed) {
         windSpeed = aWindSpeed;
     }
 
@@ -364,7 +364,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of windDir
      */
-    public double getWindDir() {
+    public Double getWindDir() {
         return windDir;
     }
 
@@ -373,7 +373,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aWindDir the new value for windDir
      */
-    public void setWindDir(double aWindDir) {
+    public void setWindDir(Double aWindDir) {
         windDir = aWindDir;
     }
 
@@ -382,7 +382,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of windGust
      */
-    public double getWindGust() {
+    public Double getWindGust() {
         return windGust;
     }
 
@@ -391,7 +391,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aWindGust the new value for windGust
      */
-    public void setWindGust(double aWindGust) {
+    public void setWindGust(Double aWindGust) {
         windGust = aWindGust;
     }
 
@@ -400,7 +400,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of windGustDir
      */
-    public double getWindGustDir() {
+    public Double getWindGustDir() {
         return windGustDir;
     }
 
@@ -409,7 +409,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aWindGustDir the new value for windGustDir
      */
-    public void setWindGustDir(double aWindGustDir) {
+    public void setWindGustDir(Double aWindGustDir) {
         windGustDir = aWindGustDir;
     }
 
@@ -418,7 +418,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of rainRate
      */
-    public double getRainRate() {
+    public Double getRainRate() {
         return rainRate;
     }
 
@@ -427,7 +427,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aRainRate the new value for rainRate
      */
-    public void setRainRate(double aRainRate) {
+    public void setRainRate(Double aRainRate) {
         rainRate = aRainRate;
     }
 
@@ -436,7 +436,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of rain
      */
-    public double getRain() {
+    public Double getRain() {
         return rain;
     }
 
@@ -445,26 +445,26 @@ public class Upiitawe implements Serializable {
      *
      * @param aRain the new value for rain
      */
-    public void setRain(double aRain) {
+    public void setRain(Double aRain) {
         rain = aRain;
     }
 
     /**
-     * Access method for dewpoint.
+     * Access method for dewpoInteger.
      *
-     * @return the current value of dewpoint
+     * @return the current value of dewpoInteger
      */
-    public double getDewpoint() {
-        return dewpoint;
+    public Double getDewpoInteger() {
+        return dewpoInteger;
     }
 
     /**
-     * Setter method for dewpoint.
+     * Setter method for dewpoInteger.
      *
-     * @param aDewpoint the new value for dewpoint
+     * @param aDewpoInteger the new value for dewpoInteger
      */
-    public void setDewpoint(double aDewpoint) {
-        dewpoint = aDewpoint;
+    public void setDewpoInteger(Double aDewpoInteger) {
+        dewpoInteger = aDewpoInteger;
     }
 
     /**
@@ -472,7 +472,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of windchill
      */
-    public double getWindchill() {
+    public Double getWindchill() {
         return windchill;
     }
 
@@ -481,7 +481,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aWindchill the new value for windchill
      */
-    public void setWindchill(double aWindchill) {
+    public void setWindchill(Double aWindchill) {
         windchill = aWindchill;
     }
 
@@ -490,7 +490,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of heatindex
      */
-    public double getHeatindex() {
+    public Double getHeatindex() {
         return heatindex;
     }
 
@@ -499,7 +499,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aHeatindex the new value for heatindex
      */
-    public void setHeatindex(double aHeatindex) {
+    public void setHeatindex(Double aHeatindex) {
         heatindex = aHeatindex;
     }
 
@@ -508,7 +508,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of et
      */
-    public double getEt() {
+    public Double getEt() {
         return et;
     }
 
@@ -517,7 +517,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aEt the new value for et
      */
-    public void setEt(double aEt) {
+    public void setEt(Double aEt) {
         et = aEt;
     }
 
@@ -526,7 +526,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of radiation
      */
-    public double getRadiation() {
+    public Double getRadiation() {
         return radiation;
     }
 
@@ -535,7 +535,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aRadiation the new value for radiation
      */
-    public void setRadiation(double aRadiation) {
+    public void setRadiation(Double aRadiation) {
         radiation = aRadiation;
     }
 
@@ -544,7 +544,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of uv
      */
-    public double getUv() {
+    public Double getUv() {
         return uv;
     }
 
@@ -553,7 +553,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aUv the new value for uv
      */
-    public void setUv(double aUv) {
+    public void setUv(Double aUv) {
         uv = aUv;
     }
 
@@ -562,7 +562,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of extraTemp1
      */
-    public double getExtraTemp1() {
+    public Double getExtraTemp1() {
         return extraTemp1;
     }
 
@@ -571,7 +571,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aExtraTemp1 the new value for extraTemp1
      */
-    public void setExtraTemp1(double aExtraTemp1) {
+    public void setExtraTemp1(Double aExtraTemp1) {
         extraTemp1 = aExtraTemp1;
     }
 
@@ -580,7 +580,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of extraTemp2
      */
-    public double getExtraTemp2() {
+    public Double getExtraTemp2() {
         return extraTemp2;
     }
 
@@ -589,7 +589,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aExtraTemp2 the new value for extraTemp2
      */
-    public void setExtraTemp2(double aExtraTemp2) {
+    public void setExtraTemp2(Double aExtraTemp2) {
         extraTemp2 = aExtraTemp2;
     }
 
@@ -598,7 +598,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of extraTemp3
      */
-    public double getExtraTemp3() {
+    public Double getExtraTemp3() {
         return extraTemp3;
     }
 
@@ -607,7 +607,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aExtraTemp3 the new value for extraTemp3
      */
-    public void setExtraTemp3(double aExtraTemp3) {
+    public void setExtraTemp3(Double aExtraTemp3) {
         extraTemp3 = aExtraTemp3;
     }
 
@@ -616,7 +616,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilTemp1
      */
-    public double getSoilTemp1() {
+    public Double getSoilTemp1() {
         return soilTemp1;
     }
 
@@ -625,7 +625,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilTemp1 the new value for soilTemp1
      */
-    public void setSoilTemp1(double aSoilTemp1) {
+    public void setSoilTemp1(Double aSoilTemp1) {
         soilTemp1 = aSoilTemp1;
     }
 
@@ -634,7 +634,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilTemp2
      */
-    public double getSoilTemp2() {
+    public Double getSoilTemp2() {
         return soilTemp2;
     }
 
@@ -643,7 +643,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilTemp2 the new value for soilTemp2
      */
-    public void setSoilTemp2(double aSoilTemp2) {
+    public void setSoilTemp2(Double aSoilTemp2) {
         soilTemp2 = aSoilTemp2;
     }
 
@@ -652,7 +652,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilTemp3
      */
-    public double getSoilTemp3() {
+    public Double getSoilTemp3() {
         return soilTemp3;
     }
 
@@ -661,7 +661,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilTemp3 the new value for soilTemp3
      */
-    public void setSoilTemp3(double aSoilTemp3) {
+    public void setSoilTemp3(Double aSoilTemp3) {
         soilTemp3 = aSoilTemp3;
     }
 
@@ -670,7 +670,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilTemp4
      */
-    public double getSoilTemp4() {
+    public Double getSoilTemp4() {
         return soilTemp4;
     }
 
@@ -679,7 +679,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilTemp4 the new value for soilTemp4
      */
-    public void setSoilTemp4(double aSoilTemp4) {
+    public void setSoilTemp4(Double aSoilTemp4) {
         soilTemp4 = aSoilTemp4;
     }
 
@@ -688,7 +688,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of leafTemp1
      */
-    public double getLeafTemp1() {
+    public Double getLeafTemp1() {
         return leafTemp1;
     }
 
@@ -697,7 +697,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aLeafTemp1 the new value for leafTemp1
      */
-    public void setLeafTemp1(double aLeafTemp1) {
+    public void setLeafTemp1(Double aLeafTemp1) {
         leafTemp1 = aLeafTemp1;
     }
 
@@ -706,7 +706,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of leafTemp2
      */
-    public double getLeafTemp2() {
+    public Double getLeafTemp2() {
         return leafTemp2;
     }
 
@@ -715,7 +715,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aLeafTemp2 the new value for leafTemp2
      */
-    public void setLeafTemp2(double aLeafTemp2) {
+    public void setLeafTemp2(Double aLeafTemp2) {
         leafTemp2 = aLeafTemp2;
     }
 
@@ -724,7 +724,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of extraHumid1
      */
-    public double getExtraHumid1() {
+    public Double getExtraHumid1() {
         return extraHumid1;
     }
 
@@ -733,7 +733,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aExtraHumid1 the new value for extraHumid1
      */
-    public void setExtraHumid1(double aExtraHumid1) {
+    public void setExtraHumid1(Double aExtraHumid1) {
         extraHumid1 = aExtraHumid1;
     }
 
@@ -742,7 +742,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of extraHumid2
      */
-    public double getExtraHumid2() {
+    public Double getExtraHumid2() {
         return extraHumid2;
     }
 
@@ -751,7 +751,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aExtraHumid2 the new value for extraHumid2
      */
-    public void setExtraHumid2(double aExtraHumid2) {
+    public void setExtraHumid2(Double aExtraHumid2) {
         extraHumid2 = aExtraHumid2;
     }
 
@@ -760,7 +760,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilMoist1
      */
-    public double getSoilMoist1() {
+    public Double getSoilMoist1() {
         return soilMoist1;
     }
 
@@ -769,7 +769,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilMoist1 the new value for soilMoist1
      */
-    public void setSoilMoist1(double aSoilMoist1) {
+    public void setSoilMoist1(Double aSoilMoist1) {
         soilMoist1 = aSoilMoist1;
     }
 
@@ -778,7 +778,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilMoist2
      */
-    public double getSoilMoist2() {
+    public Double getSoilMoist2() {
         return soilMoist2;
     }
 
@@ -787,7 +787,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilMoist2 the new value for soilMoist2
      */
-    public void setSoilMoist2(double aSoilMoist2) {
+    public void setSoilMoist2(Double aSoilMoist2) {
         soilMoist2 = aSoilMoist2;
     }
 
@@ -796,7 +796,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilMoist3
      */
-    public double getSoilMoist3() {
+    public Double getSoilMoist3() {
         return soilMoist3;
     }
 
@@ -805,7 +805,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilMoist3 the new value for soilMoist3
      */
-    public void setSoilMoist3(double aSoilMoist3) {
+    public void setSoilMoist3(Double aSoilMoist3) {
         soilMoist3 = aSoilMoist3;
     }
 
@@ -814,7 +814,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of soilMoist4
      */
-    public double getSoilMoist4() {
+    public Double getSoilMoist4() {
         return soilMoist4;
     }
 
@@ -823,7 +823,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSoilMoist4 the new value for soilMoist4
      */
-    public void setSoilMoist4(double aSoilMoist4) {
+    public void setSoilMoist4(Double aSoilMoist4) {
         soilMoist4 = aSoilMoist4;
     }
 
@@ -832,7 +832,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of leafWet1
      */
-    public double getLeafWet1() {
+    public Double getLeafWet1() {
         return leafWet1;
     }
 
@@ -841,7 +841,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aLeafWet1 the new value for leafWet1
      */
-    public void setLeafWet1(double aLeafWet1) {
+    public void setLeafWet1(Double aLeafWet1) {
         leafWet1 = aLeafWet1;
     }
 
@@ -850,7 +850,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of leafWet2
      */
-    public double getLeafWet2() {
+    public Double getLeafWet2() {
         return leafWet2;
     }
 
@@ -859,7 +859,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aLeafWet2 the new value for leafWet2
      */
-    public void setLeafWet2(double aLeafWet2) {
+    public void setLeafWet2(Double aLeafWet2) {
         leafWet2 = aLeafWet2;
     }
 
@@ -868,7 +868,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of rxCheckPercent
      */
-    public double getRxCheckPercent() {
+    public Double getRxCheckPercent() {
         return rxCheckPercent;
     }
 
@@ -877,7 +877,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aRxCheckPercent the new value for rxCheckPercent
      */
-    public void setRxCheckPercent(double aRxCheckPercent) {
+    public void setRxCheckPercent(Double aRxCheckPercent) {
         rxCheckPercent = aRxCheckPercent;
     }
 
@@ -886,7 +886,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of txBatteryStatus
      */
-    public double getTxBatteryStatus() {
+    public Double getTxBatteryStatus() {
         return txBatteryStatus;
     }
 
@@ -895,7 +895,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aTxBatteryStatus the new value for txBatteryStatus
      */
-    public void setTxBatteryStatus(double aTxBatteryStatus) {
+    public void setTxBatteryStatus(Double aTxBatteryStatus) {
         txBatteryStatus = aTxBatteryStatus;
     }
 
@@ -904,7 +904,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of consBatteryVoltage
      */
-    public double getConsBatteryVoltage() {
+    public Double getConsBatteryVoltage() {
         return consBatteryVoltage;
     }
 
@@ -913,7 +913,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aConsBatteryVoltage the new value for consBatteryVoltage
      */
-    public void setConsBatteryVoltage(double aConsBatteryVoltage) {
+    public void setConsBatteryVoltage(Double aConsBatteryVoltage) {
         consBatteryVoltage = aConsBatteryVoltage;
     }
 
@@ -922,7 +922,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of hail
      */
-    public double getHail() {
+    public Double getHail() {
         return hail;
     }
 
@@ -931,7 +931,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aHail the new value for hail
      */
-    public void setHail(double aHail) {
+    public void setHail(Double aHail) {
         hail = aHail;
     }
 
@@ -940,7 +940,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of hailRate
      */
-    public double getHailRate() {
+    public Double getHailRate() {
         return hailRate;
     }
 
@@ -949,7 +949,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aHailRate the new value for hailRate
      */
-    public void setHailRate(double aHailRate) {
+    public void setHailRate(Double aHailRate) {
         hailRate = aHailRate;
     }
 
@@ -958,7 +958,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of heatingTemp
      */
-    public double getHeatingTemp() {
+    public Double getHeatingTemp() {
         return heatingTemp;
     }
 
@@ -967,7 +967,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aHeatingTemp the new value for heatingTemp
      */
-    public void setHeatingTemp(double aHeatingTemp) {
+    public void setHeatingTemp(Double aHeatingTemp) {
         heatingTemp = aHeatingTemp;
     }
 
@@ -976,7 +976,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of heatingVoltage
      */
-    public double getHeatingVoltage() {
+    public Double getHeatingVoltage() {
         return heatingVoltage;
     }
 
@@ -985,7 +985,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aHeatingVoltage the new value for heatingVoltage
      */
-    public void setHeatingVoltage(double aHeatingVoltage) {
+    public void setHeatingVoltage(Double aHeatingVoltage) {
         heatingVoltage = aHeatingVoltage;
     }
 
@@ -994,7 +994,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of supplyVoltage
      */
-    public double getSupplyVoltage() {
+    public Double getSupplyVoltage() {
         return supplyVoltage;
     }
 
@@ -1003,7 +1003,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aSupplyVoltage the new value for supplyVoltage
      */
-    public void setSupplyVoltage(double aSupplyVoltage) {
+    public void setSupplyVoltage(Double aSupplyVoltage) {
         supplyVoltage = aSupplyVoltage;
     }
 
@@ -1012,7 +1012,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of referenceVoltage
      */
-    public double getReferenceVoltage() {
+    public Double getReferenceVoltage() {
         return referenceVoltage;
     }
 
@@ -1021,7 +1021,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aReferenceVoltage the new value for referenceVoltage
      */
-    public void setReferenceVoltage(double aReferenceVoltage) {
+    public void setReferenceVoltage(Double aReferenceVoltage) {
         referenceVoltage = aReferenceVoltage;
     }
 
@@ -1030,7 +1030,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of windBatteryStatus
      */
-    public double getWindBatteryStatus() {
+    public Double getWindBatteryStatus() {
         return windBatteryStatus;
     }
 
@@ -1039,7 +1039,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aWindBatteryStatus the new value for windBatteryStatus
      */
-    public void setWindBatteryStatus(double aWindBatteryStatus) {
+    public void setWindBatteryStatus(Double aWindBatteryStatus) {
         windBatteryStatus = aWindBatteryStatus;
     }
 
@@ -1048,7 +1048,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of rainBatteryStatus
      */
-    public double getRainBatteryStatus() {
+    public Double getRainBatteryStatus() {
         return rainBatteryStatus;
     }
 
@@ -1057,7 +1057,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aRainBatteryStatus the new value for rainBatteryStatus
      */
-    public void setRainBatteryStatus(double aRainBatteryStatus) {
+    public void setRainBatteryStatus(Double aRainBatteryStatus) {
         rainBatteryStatus = aRainBatteryStatus;
     }
 
@@ -1066,7 +1066,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of outTempBatteryStatus
      */
-    public double getOutTempBatteryStatus() {
+    public Double getOutTempBatteryStatus() {
         return outTempBatteryStatus;
     }
 
@@ -1075,7 +1075,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aOutTempBatteryStatus the new value for outTempBatteryStatus
      */
-    public void setOutTempBatteryStatus(double aOutTempBatteryStatus) {
+    public void setOutTempBatteryStatus(Double aOutTempBatteryStatus) {
         outTempBatteryStatus = aOutTempBatteryStatus;
     }
 
@@ -1084,7 +1084,7 @@ public class Upiitawe implements Serializable {
      *
      * @return the current value of inTempBatteryStatus
      */
-    public double getInTempBatteryStatus() {
+    public Double getInTempBatteryStatus() {
         return inTempBatteryStatus;
     }
 
@@ -1093,7 +1093,7 @@ public class Upiitawe implements Serializable {
      *
      * @param aInTempBatteryStatus the new value for inTempBatteryStatus
      */
-    public void setInTempBatteryStatus(double aInTempBatteryStatus) {
+    public void setInTempBatteryStatus(Double aInTempBatteryStatus) {
         inTempBatteryStatus = aInTempBatteryStatus;
     }
 
@@ -1127,20 +1127,6 @@ public class Upiitawe implements Serializable {
     public boolean equals(Object other) {
         if (!(other instanceof Upiitawe)) return false;
         return this.equalKeys(other) && ((Upiitawe)other).equalKeys(this);
-    }
-
-    /**
-     * Returns a hash code for this instance.
-     *
-     * @return Hash code
-     */
-    @Override
-    public int hashCode() {
-        int i;
-        int result = 17;
-        i = getDateTime();
-        result = 37*result + i;
-        return result;
     }
 
     /**

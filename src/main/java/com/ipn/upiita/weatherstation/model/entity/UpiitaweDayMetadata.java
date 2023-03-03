@@ -130,24 +130,6 @@ public class UpiitaweDayMetadata implements Serializable {
     }
 
     /**
-     * Returns a hash code for this instance.
-     *
-     * @return Hash code
-     */
-    @Override
-    public int hashCode() {
-        int i;
-        int result = 17;
-        if (getName() == null) {
-            i = 0;
-        } else {
-            i = getName().hashCode();
-        }
-        result = 37*result + i;
-        return result;
-    }
-
-    /**
      * Returns a debug-friendly String representation of this instance.
      *
      * @return String representation of this instance
